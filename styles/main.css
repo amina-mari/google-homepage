@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
 }
 
 body {
@@ -47,6 +50,7 @@ a:hover {
 
 .navbar__link {
     color: rgba(0,0,0,0.87);
+    font-size: 13px;
 }
 
 .navbar__link--icon {
@@ -65,6 +69,8 @@ a:hover {
 
 .navbar__sign-in {
     color: white;
+    font-weight: 500;
+    font-size: 14px;
     background-image: -webkit-linear-gradient(top, rgb(67, 135, 253), rgb(70, 131, 234));
     padding: 9px 23px;
     border-radius: 4px;
@@ -78,6 +84,9 @@ a:hover {
 
 /* ************ SEARCH ************ */
 
+.search {
+    margin-top: 6px;
+}
 
 .search__logo {
     display: block;
@@ -92,6 +101,7 @@ a:hover {
     width: 600px;
     height: 44px;
     margin: auto;
+    margin-top: 20px;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     background-image: url("../images/search.png");
@@ -117,6 +127,8 @@ a:hover {
     padding: 0;
     outline: none;
     height: 100%;
+    color: rgba(0,0,0,.87);
+    font-size: 16px;
 }
 
 .search__div-icons {
@@ -140,12 +152,14 @@ it wasn't seem like the original icon */
 .search__div-links {
     width: 300px;
     margin: auto;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 
 .search__link {
     color: #3c4043;
+    font-size: 14px;
     padding: 10px 16px;
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
@@ -173,4 +187,5 @@ it wasn't seem like the original icon */
 .footer__link {
     padding: 15px;
     color: #70757a;
+    font-size: 14px;
 }
