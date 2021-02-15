@@ -67,6 +67,55 @@ a:hover {
     width: 20px;
 }
 
+.navbar__li-icon {
+    position: relative;
+}
+
+.navbar__dropdown {
+    display: none;
+    background-color: white;
+    box-shadow: 0 1px 10px rgb(32 33 36 / 28%);
+    position: absolute;
+    right: -130px;
+    width: 300px;
+    border-radius: 6px;
+    /* Here I'm using 'padding-top' because 'top' create a space
+    between the icon and the dropdown that when the user hover on that space, 
+    the dropdown disappear (because I've realized that this space created by top 
+    is not actually part of the li, and the dropdown only shows when the li is hovered) */
+    padding: 20px 10px;
+
+}
+
+.navbar__dropdown img {
+    width: 40px;
+}
+
+.navbar__dropdown div {
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.navbar__dropdown p {
+    margin: 0;
+    color: rgba(0,0,0,0.87);
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.navbar__dropdown div:hover {
+    cursor: pointer;
+    background-color: rgb(213, 229, 247);
+}
+
+.navbar__li-icon:hover .navbar__dropdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
 .navbar__sign-in {
     color: white;
     font-weight: 500;
@@ -128,7 +177,7 @@ a:hover {
     outline: none;
     height: 100%;
     color: rgba(0,0,0,.87);
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .search__div-icons {
