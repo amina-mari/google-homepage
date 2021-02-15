@@ -141,14 +141,14 @@ a:hover {
 .search__logo {
     display: block;
     margin: auto;
-    width: 300px;
+    max-width: 300px;
 }
 
 .search__div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 600px;
+    max-width: 600px;
     height: 44px;
     margin: auto;
     margin-top: 20px;
@@ -167,6 +167,7 @@ a:hover {
 }
 
 .search__form {
+    min-width: 200px;
     width: 90%;
     height: 100%;
 }
@@ -256,7 +257,7 @@ it wasn't seem like the original icon */
 }
 
 .search__div-links {
-    width: 300px;
+    max-width: 300px;
     margin: auto;
     margin-top: 30px;
     display: flex;
@@ -283,7 +284,9 @@ it wasn't seem like the original icon */
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: rgb(242, 242, 242);
     padding: 15px;
     position: absolute;
@@ -291,8 +294,67 @@ it wasn't seem like the original icon */
     width: 100%;
 }
 
+.footer__list {
+    min-width: 200px;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .footer__link {
     padding: 15px;
     color: #70757a;
     font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    .search {
+        margin-top: 20px;
+    }
+
+    .search__logo {
+        max-width: 250px;
+    }
+
+    .search__div {
+        margin: 20px 20px 0 20px;
+    }
+
+    .search__div-icons {
+        width: 15%;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .search {
+        margin-top: 40px;
+    }
+
+    .search__div {
+        margin-top: 40px;
+    }
+    
+    .search__div-icons {
+        width: 20%;
+    }
+
+    .search__form {
+        min-width: 100px;
+    }
+
+    .search__div-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+        margin: auto;
+        margin-top: 40px;
+    }
 }
